@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第二天、探究Activity" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三天、UI界面" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第四天、TabLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第五天、广播" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第六天、数据持久化" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第七天、组件间通信" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chapter8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总结 MVVM + 数据请求" />
+
+</LinearLayout>

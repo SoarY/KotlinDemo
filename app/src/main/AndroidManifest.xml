@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soarsy.ktdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KTDemo">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 第二天 探究Activity -->
+        <activity android:name=".Chapter2.Learn2Activity" /> <!-- 第三天 UI开发 -->
+        <activity android:name=".Chapter3.Learn3Activity" /> <!-- 第四天 探究Fragment -->
+        <activity android:name=".Chapter4.Learn4Activity" /> <!-- 第五天 广播 -->
+        <activity
+            android:name=".Chapter5.Learn5Activity"
+            android:exported="false" /> <!-- 静态注册，开机启动广播 -->
+        <activity
+            android:name=".Chapter6.Learn6Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Chapter7.Learn7Activity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Chapter5.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
