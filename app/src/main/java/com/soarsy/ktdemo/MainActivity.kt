@@ -15,6 +15,7 @@ import com.soarsy.ktdemo.Chapter5.Learn5Activity
 import com.soarsy.ktdemo.Chapter6.Learn6Activity
 import com.soarsy.ktdemo.Chapter7.Learn7Activity
 import com.soarsy.ktdemo.Chapter7.MessageEvent
+import com.soarsy.ktdemo.mvvm.ui.activity.LoginActivity
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
@@ -41,6 +42,8 @@ class MainActivity : AppCompatActivity() {
         chapter6()
 
         chapter7()
+
+        chapter8()
     }
 
     private fun chapter2() {
@@ -84,6 +87,13 @@ class MainActivity : AppCompatActivity() {
         button7 = findViewById(R.id.chapter7)
         button7.setOnClickListener {
             Learn7Activity.actionStart(this)
+        }
+    }
+
+    private fun chapter8() {
+        val button8 = findViewById<View>(R.id.chapter8)
+        button8.setOnClickListener {
+            LoginActivity.actionStart(this)
         }
     }
 
