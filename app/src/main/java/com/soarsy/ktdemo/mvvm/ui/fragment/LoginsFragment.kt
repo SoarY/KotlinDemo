@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.soarsy.ktdemo.R
+import com.soarsy.ktdemo.mvvm.ui.activity.GithubHomeActivity
 import com.soarsy.ktdemo.mvvm.vm.LoginViewModel
 
 /**
@@ -43,7 +44,7 @@ class LoginsFragment: BaseFragment() {
   vm = ViewModelProvider(this).get(LoginViewModel::class.java)
 
   vm.liveData.observe(viewLifecycleOwner, Observer {
-   Toast.makeText(context,it.toString(),Toast.LENGTH_LONG).show()
+   GithubHomeActivity.actionStart(requireActivity())
   })
 
   mBtnSignIn.setOnClickListener {
@@ -52,6 +53,6 @@ class LoginsFragment: BaseFragment() {
  }
 
  companion object{
-  const val token="token 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";
+  const val token="token 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"
  }
 }
