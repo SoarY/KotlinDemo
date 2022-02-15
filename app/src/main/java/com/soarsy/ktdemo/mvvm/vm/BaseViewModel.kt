@@ -1,5 +1,6 @@
 package com.soarsy.ktdemo.mvvm.vm
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 /**
@@ -8,4 +9,16 @@ import androidx.lifecycle.ViewModel
  * Describe:
  */
 open class BaseViewModel:ViewModel() {
+    val START = 0
+    val END = 1
+
+    val stateLiveData: MutableLiveData<Int> = MutableLiveData()
+
+    fun start() {
+        stateLiveData.postValue(START)
+    }
+
+    fun end() {
+        stateLiveData.postValue(END)
+    }
 }

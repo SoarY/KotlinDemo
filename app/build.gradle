@@ -48,4 +48,10 @@ dependencies {
     /* 异步任务 */
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    /* 刷新 */
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01'
+    /* 圆角图片 */
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    /* 图片显示 */
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 }

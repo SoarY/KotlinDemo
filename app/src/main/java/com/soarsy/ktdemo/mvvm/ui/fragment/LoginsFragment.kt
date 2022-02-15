@@ -9,6 +9,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.soarsy.ktdemo.R
 import com.soarsy.ktdemo.mvvm.ui.activity.GithubHomeActivity
+import com.soarsy.ktdemo.mvvm.utlis.SharedPref
+import com.soarsy.ktdemo.mvvm.utlis.SharedPrefCont
 import com.soarsy.ktdemo.mvvm.vm.LoginViewModel
 
 /**
@@ -44,15 +46,18 @@ class LoginsFragment: BaseFragment() {
   vm = ViewModelProvider(this).get(LoginViewModel::class.java)
 
   vm.liveData.observe(viewLifecycleOwner, Observer {
+   var user : String by SharedPref<String>(requireActivity(), SharedPrefCont.USER_ACCOUNT, "")
+   user=it.login
    GithubHomeActivity.actionStart(requireActivity())
   })
 
   mBtnSignIn.setOnClickListener {
    vm.getLogin(token)
+   //vm.liveData.postValue(null)
   }
  }
 
  companion object{
-  const val token="token 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"
+  const val token="token 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"
  }
 }
