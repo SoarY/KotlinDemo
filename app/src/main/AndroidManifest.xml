@@ -39,6 +39,9 @@
         <activity
             android:name=".mvvm.ui.activity.GithubHomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".databinding.ui.activity.TextDataBindingActivity"
+            android:exported="false" />
 
         <receiver
             android:name=".Chapter5.MyReceiver"
